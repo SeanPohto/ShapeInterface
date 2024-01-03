@@ -7,13 +7,15 @@
  */
 public class ThirteenSides implements Shape
 {
+  private int apothem;
+  private int radius;  
   private int sideLength;
   private String color;
 
   /**
    * Constructor for objects of class Circle
    */
-  public ThirteenSides(int radius, String color)
+  public ThirteenSides(int radius, String color, int sideLength, int apothem)
   {
     this.sideLength = sideLength;
     this.color = color;
@@ -26,8 +28,7 @@ public class ThirteenSides implements Shape
    */
   public double getArea()
   {
-    this.sideLength
-    return (13/2) * this.sideLength * (
+    return ((13*this.sideLength)/2) * (this.apothem);
   }
 
   /**
